@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Bookle.BL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8c6be6aca6242a7b9af440989039e5b7b2b0371c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b9c160108a20f655dbaf63e291bb1d90571d0db0")]
 [assembly: System.Reflection.AssemblyProductAttribute("Bookle.BL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Bookle.BL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

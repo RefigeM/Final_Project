@@ -1,167 +1,96 @@
 ﻿@model BookUpdateVM
 @{
-	ViewData["Title"] = "Update";
+    ViewData["Title"] = "Update";
 }
-
-
-
 
 <!-- main content -->
 <main class="main">
-	<div class="container-fluid">
-		<div class="row">
-			<!-- main title -->
-			<div class="col-12">
-				<div class="main__title">
-					<h2>Add new item</h2>
-				</div>
-			</div>
-			<!-- end main title -->
-			<!-- form -->
-			<div class="col-12">
-				<form method="post" enctype="multipart/form-data">
-					<div class="row">
-						<div class="col-12 col-xl-7">
-							<div class="row">
-								<div class="col-12">
-									<div class="sign__group">
-										<input asp-for="Title" class="sign__input" placeholder="Title" />
-										<span asp-validation-for="Title" class="text-danger"></span>
-									</div>
-								</div>
-								<div class="sign__group">
-									<select class="sign__input" asp-for="AuthorId" asp-items='new SelectList(ViewBag.Authors, "Id", "AuthorName")'>
-										<option disabled selected>Select Author</option>
-									</select>
-
-									<span asp-validation-for="AuthorId" class="text-danger"></span>
-								</div>
-								<div class="col-12">
-									<div class="sign__group">
-										<textarea asp-for="ShortDescription" id="text" name="text" class="sign__textarea" placeholder="ShortDescription" class="sign__textarea"></textarea>
-										<span asp-validation-for="ShortDescription" class="text-danger"></span>
-									</div>
-								</div>
-								<div class="col-12">
-									<div class="sign__group">
-										<textarea asp-for="Description" id="text" name="text" class="sign__textarea" placeholder="Description" class="sign__textarea"></textarea>
-										<span asp-validation-for="Description" class="text-danger"></span>
-									</div>
-								</div>
-
-
-								<div class="form-group">
-									<div class="d-flex">
-										<img src="~/imgs/books/@Model.FileUrl" width="50" />
-									</div>
-									<label class="text-white" asp-for="File">Cover Image</label>
-									<input accept="image/*" class="form-control" asp-for="File" style="color: white; background-color: #1a191f;">
-									<span class="text-danger" asp-validation-for="File" class="text-danger"></span>
-								</div>
-
-
-							</div>
-						</div>
-
-						<div class="col-12 col-xl-5">
-							<div class="row">
-
-
-								<div class="col-12 col-md-6">
-									<div class="sign__group">
-										<input asp-for="PublishedYear" type="text" class="sign__input" placeholder="Publish Year">
-										<span class="text-danger" asp-validation-for="PublishedYear" class="text-danger"></span>
-
-									</div>
-								</div>
-
-
-								<div class="col-12 col-md-6">
-									<div class="sign__group">
-										<input asp-for="ISBN" type="text" class="sign__input" placeholder="ISBN">
-										<span class="text-danger" asp-validation-for="ISBN" class="text-danger"></span>
-
-									</div>
-								</div>
-								<div class="col-12">
-									<div class="sign__group">
-										<textarea asp-for="RoleOfBook" id="text" name="text" class="sign__textarea" placeholder="RoleOfBook" class="sign__textarea"></textarea>
-										<span asp-validation-for="RoleOfBook" class="text-danger"></span>
-									</div>
-								</div>
-								<div class="col-12 col-md-6">
-									<div class="sign__group">
-										<select asp-for="Language" asp-items="ViewBag.Languages" type="text" class="sign__input" placeholder="Language">
-											<option disabled selected> Language</option>
-										</select>
-										<span asp-validation-for="Language" class="text-danger"></span>
-
-									</div>
-								</div>
-								<div class="col-12 col-md-6">
-									<div class="sign__group">
-										<select asp-for="Country" asp-items="ViewBag.Countries" type="text" class="sign__input" placeholder="Country">
-											<option disabled selected> Country</option>
-										</select>
-										<span asp-validation-for="Country" class="text-danger"></span>
-
-									</div>
-								</div>
-								<div class="col-12 col-md-6">
-									<div class="sign__group">
-										<select asp-for="Genre" asp-items="ViewBag.Genres" type="text" class="sign__input" placeholder="Genres">
-											<option disabled selected> Genre</option>
-										</select>
-										<span asp-validation-for="Genre" class="text-danger"></span>
-
-									</div>
-								</div>
-								<div class="col-12 col-md-6">
-									<div class="sign__group">
-										<select asp-for="Format" asp-items="ViewBag.Formats" class="sign__input" type="text" class="sign__input" placeholder="Format">
-											<option disabled selected> Format</option>
-										</select>
-										<span asp-validation-for="Format" class="text-danger"></span>
-
-									</div>
-								</div>
-								<div class="col-12 col-md-6">
-									<div class="sign__group">
-										<input asp-for="PageCount" type="text" class="sign__input" placeholder="Page Count">
-										<span asp-validation-for="PageCount" class="text-danger"></span>
-
-									</div>
-								</div>
-								<div class="col-12 col-md-6">
-									<div class="sign__group">
-										<input asp-for="Price" type="text" class="sign__input" placeholder="Price">
-										<span asp-validation-for="Price" class="text-danger"></span>
-
-									</div>
-								</div>
-								@* <div class="form-group">
-
-									<div class="d-flex">
-										@foreach (var item in Model.OtherFilesUrl ?? [])
-										{
-											<label class="del-img-label" for="@item"><img width="80px" src="~/imgs/books/@item" /></label>
-										}
-									</div>
-									<label class="text-white" asp-for="OtherFiles">Other Images</label>
-									<input type="file" name="OtherFiles" accept="image/*" class="form-control" style="color: white; background-color: #1a191f;" multiple />
-									<span class="text-danger" asp-validation-for="OtherFiles" class="text-danger"></span>
-								</div> *@
-
-							</div>
-						</div>
-						<div class="col-12">
-							<button type="submit" class="btn btn-primary" style="margin-top: 20px">Submit</button>
-						</div>
-					</div>
-				</form>
-			</div>
-			<!-- end form -->
-		</div>
-	</div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="main__title">
+                    <h2>Update Book</h2>
+                </div>
+            </div>
+            <div class="col-12">
+                <form method="post" enctype="multipart/form-data">
+                    <div class="row">
+                        <div class="col-12 col-xl-7">
+                            <div class="sign__group">
+                                <input asp-for="Title" class="sign__input" placeholder="Title" />
+                                <span asp-validation-for="Title" class="text-danger"></span>
+                            </div>
+                            <div class="sign__group">
+                                <select asp-for="AuthorId" asp-items="@(ViewBag.Authors ?? new SelectList(Enumerable.Empty<SelectListItem>()))" class="sign__input">
+                                    <option disabled selected>Select Author</option>
+                                </select>
+                                <span asp-validation-for="AuthorId" class="text-danger"></span>
+                            </div>
+                            <div class="sign__group">
+                                <textarea asp-for="ShortDescription" class="sign__textarea" placeholder="Short Description"></textarea>
+                                <span asp-validation-for="ShortDescription" class="text-danger"></span>
+                            </div>
+                            <div class="sign__group">
+                                <textarea asp-for="Description" class="sign__textarea" placeholder="Description"></textarea>
+                                <span asp-validation-for="Description" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <div class="d-flex">
+                                    <img src="~/imgs/books/@Model.FileUrl" width="50" />
+                                </div>
+                                <label class="text-white" asp-for="File">Cover Image</label>
+                                <input accept="image/*" class="form-control" asp-for="File" style="color: white; background-color: #1a191f;">
+                                <span class="text-danger" asp-validation-for="File" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-xl-5">
+                            <div class="sign__group">
+                                <input asp-for="PublishedYear" type="text" class="sign__input" placeholder="Publish Year">
+                                <span class="text-danger" asp-validation-for="PublishedYear"></span>
+                            </div>
+                            <div class="sign__group">
+                                <input asp-for="ISBN" type="text" class="sign__input" placeholder="ISBN">
+                                <span class="text-danger" asp-validation-for="ISBN"></span>
+                            </div>
+                            <div class="sign__group">
+                                <select asp-for="Language" asp-items="@(ViewBag.Languages ?? new SelectList(Enumerable.Empty<SelectListItem>()))" class="sign__input">
+                                    <option disabled selected> Language</option>
+                                </select>
+                                <span asp-validation-for="Language" class="text-danger"></span>
+                            </div>
+                            <div class="sign__group">
+                                <select asp-for="Country" asp-items="@(ViewBag.Countries ?? new SelectList(Enumerable.Empty<SelectListItem>()))" class="sign__input">
+                                    <option disabled selected> Country</option>
+                                </select>
+                                <span asp-validation-for="Country" class="text-danger"></span>
+                            </div>
+                            <div class="sign__group">
+                                <select asp-for="Genre" asp-items="@(ViewBag.Genres ?? new SelectList(Enumerable.Empty<SelectListItem>()))" class="sign__input">
+                                    <option disabled selected> Genre</option>
+                                </select>
+                                <span asp-validation-for="Genre" class="text-danger"></span>
+                            </div>
+                            <div class="sign__group">
+                                <select asp-for="Format" asp-items="@(ViewBag.Formats ?? new SelectList(Enumerable.Empty<SelectListItem>()))" class="sign__input">
+                                    <option disabled selected> Format</option>
+                                </select>
+                                <span asp-validation-for="Format" class="text-danger"></span>
+                            </div>
+                            <div class="sign__group">
+                                <input asp-for="PageCount" type="text" class="sign__input" placeholder="Page Count">
+                                <span asp-validation-for="PageCount" class="text-danger"></span>
+                            </div>
+                            <div class="sign__group">
+                                <input asp-for="Price" type="text" class="sign__input" placeholder="Price">
+                                <span asp-validation-for="Price" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary" style="margin-top: 20px">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 </main>
-<!-- end main content -->

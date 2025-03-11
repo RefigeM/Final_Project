@@ -47,7 +47,7 @@ namespace Bookle.BL.ViewModels.BookVMs
 		[MaxLength(50)]
 		public string Language { get; set; }
 
-		[Required(ErrorMessage = "File not selected")]
+		//[Required(ErrorMessage = "File not selected")]
 		public IFormFile File { get; set; }
 		public string? FileUrl { get; set; }
 

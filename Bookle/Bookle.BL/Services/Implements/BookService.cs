@@ -145,13 +145,18 @@ public class BookService(IBookRepository _repo, BookleDbContext _context, IAutho
         if (vm.File != null)
         {
             string newFileName = await vm.File.UploadAsync("wwwroot/imgs/books");
-            book.CoverImageUrl = "/imgs/authors/" + newFileName;
+            book.CoverImageUrl = "/imgs/books/" + newFileName;
         }
-        await _repo.SaveAsync();
 
+
+
+
+
+        await _repo.SaveAsync();
     }
 
-	public async Task<IEnumerable<Book>> SearchBooksAsync(string searchQuery)
+
+    public async Task<IEnumerable<Book>> SearchBooksAsync(string searchQuery)
 	{
 		return string.IsNullOrEmpty(searchQuery)
 			? await _repo.GetAllBooksWithDetails().ToListAsync()

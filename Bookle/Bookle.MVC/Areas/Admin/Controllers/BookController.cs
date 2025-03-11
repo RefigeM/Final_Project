@@ -127,56 +127,79 @@ namespace Bookle.MVC.Areas.Admin.Controllers
 
 		public async Task<IActionResult> Update(int? id)
 		{
-			ViewBag.Authors = await _context.Authors.Where(x => !x.IsDeleted).ToListAsync();
-			ViewBag.Languages = new SelectList(new List<string> { "English", "Azerbaijani", "Turkish", "French", "Spanish" });
-			ViewBag.Countries = new SelectList(new List<string> { "English", "Azerbaijani", "Turkish" });
-			ViewBag.Formats = new SelectList(Enum.GetNames(typeof(Format)));
-			ViewBag.Genres = new SelectList(Enum.GetNames(typeof(Genre)));
 			if (id == null) return BadRequest();
+
 			var book = await _service.GetBookByIdAsync(id.Value);
 			if (book == null) return NotFound();
-			var BookUpdateVM = new BookUpdateVM
+
+			var authors = await _context.Authors.Where(x => !x.IsDeleted).ToListAsync();
+			ViewBag.Authors = authors.Any() ? new SelectList(authors, "Id", "AuthorName") : new SelectList(Enumerable.Empty<SelectListItem>());
+
+			ViewBag.Languages = new SelectList(new List<string> { "English", "Azerbaijani", "Turkish", "French", "Spanish" });
+			ViewBag.Countries = new SelectList(new List<string> { "USA", "Azerbaijan", "Turkey" });
+			ViewBag.Formats = new SelectList(Enum.GetNames(typeof(Format)));
+			ViewBag.Genres = new SelectList(Enum.GetNames(typeof(Genre)));
+
+			var bookVM = new BookUpdateVM
 			{
 				Title = book.Title,
 				AuthorId = book.AuthorId,
 				ShortDescription = book.ShortDescription,
 				Description = book.Description,
+				PublishedYear = book.PublishedYear,
+				ISBN = book.ISBN,
 				RoleOfBook = book.RoleOfBook,
+				Language = book.Language,
+				Country = book.PublishingCountry,
 				Genre = book.Genre,
 				Format = book.Format,
-				ISBN = book.ISBN,
-				Country = book.PublishingCountry,
-				PublishedYear = book.PublishedYear,
 				PageCount = book.PageCount,
 				Price = book.Price,
-				Language = book.Language,
-				FileUrl = book.CoverImageUrl,
+				FileUrl = book.CoverImageUrl
 			};
-			return View(BookUpdateVM);
 
+			return View(bookVM);
 		}
+
 		[HttpPost]
 		public async Task<IActionResult> Update(int? id, BookUpdateVM vm)
 		{
 			if (id == null) return BadRequest();
 
+			// Müəllifin mövcud olub-olmadığını yoxlayırıq
 			var author = await _context.Authors.FirstOrDefaultAsync(a => a.Id == vm.AuthorId);
 			if (author == null || author.IsDeleted)
 			{
 				ModelState.AddModelError("AuthorId", "The selected author is either deleted or does not exist.");
-				return View(vm);
 			}
 
-			if (!ModelState.IsValid)
-			{
-				return View(vm);
-			}
+            if (!ModelState.IsValid)
+            {
+                // Log or display validation errors
+                foreach (var error in ModelState.Values.SelectMany(v => v.Errors))
+                {
+                    Console.WriteLine(error.ErrorMessage); // Səhv mesajlarını ekranda göstərmək
+                }
 
-			await _service.UpdateBookAsync(id.Value, vm);
+                // Səhv baş verərsə, ViewBag-ləri doldururuq
+                var authors = await _context.Authors.Where(x => !x.IsDeleted).ToListAsync();
+                ViewBag.Authors = authors.Any()
+                    ? new SelectList(authors, "Id", "AuthorName")
+                    : new SelectList(Enumerable.Empty<SelectListItem>());
 
+                ViewBag.Languages = new SelectList(new List<string> { "English", "Azerbaijani", "Turkish", "French", "Spanish" });
+                ViewBag.Countries = new SelectList(new List<string> { "USA", "Azerbaijan", "Turkey" });
+                ViewBag.Formats = new SelectList(Enum.GetNames(typeof(Format)));
+                ViewBag.Genres = new SelectList(Enum.GetNames(typeof(Genre)));
+
+                return View(vm);
+            }
+
+            await _service.UpdateBookAsync(id.Value, vm);
 			return RedirectToAction(nameof(Index));
-
 		}
+
+
 		public async Task<IActionResult> ToggleIsFeatured(int? id)
 		{
 			if (id == null) return BadRequest();

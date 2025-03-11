@@ -225,7 +225,7 @@
                 </div>
                 <div class="shop-content">
                     <h5> @topBook.Format</h5>
-                    <h3><a href="shop-details.html">@topBook.Title </a></h3>
+                        <h3><a asp-action="Details" asp-controller="Home" asp-route-id="@topBook.Id">@topBook.Title </a></h3>
                     <ul class="price-list">
                             <li>$@topBook.Price</li>
                        
@@ -328,7 +328,7 @@
                                     <div>
                                         <h5> @topBook.Format  </h5>
                                         <h3>
-                                            <a href="shop-details.html">@topBook.Title</a>
+                                            <a asp-action="Details" asp-controller="Home" asp-route-id="@topBook.Id">@topBook.Title</a>
                                         </h3>
                                     </div>
                                     <ul class="shop-icon d-flex justify-content-center align-items-center">
