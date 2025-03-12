@@ -36,7 +36,7 @@
                             </div>
                             <div class="form-group">
                                 <div class="d-flex">
-                                    <img src="~/imgs/books/@Model.FileUrl" width="50" />
+                                    <img src="@Url.Content(Model.FileUrl)" width="50" />
                                 </div>
                                 <label class="text-white" asp-for="File">Cover Image</label>
                                 <input accept="image/*" class="form-control" asp-for="File" style="color: white; background-color: #1a191f;">

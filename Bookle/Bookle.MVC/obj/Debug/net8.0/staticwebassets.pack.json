@@ -23133,6 +23133,10 @@
       "PackagePath": "staticwebassets\\imgs\\authors\\ogawacql.1y2.jpg"
     },
     {
+      "Id": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Final_Project\\Bookle\\Bookle.MVC\\wwwroot\\imgs\\authors\\p2xba0q4.n0z.webp",
+      "PackagePath": "staticwebassets\\imgs\\authors\\p2xba0q4.n0z.webp"
+    },
+    {
       "Id": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Final_Project\\Bookle\\Bookle.MVC\\wwwroot\\imgs\\authors\\p3kuayhn.lpt.jpeg",
       "PackagePath": "staticwebassets\\imgs\\authors\\p3kuayhn.lpt.jpeg"
     },
@@ -23281,12 +23285,24 @@
       "PackagePath": "staticwebassets\\imgs\\blogs\\3bu2oold.the.jpg"
     },
     {
+      "Id": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Final_Project\\Bookle\\Bookle.MVC\\wwwroot\\imgs\\blogs\\3fonk2hw.p35.webp",
+      "PackagePath": "staticwebassets\\imgs\\blogs\\3fonk2hw.p35.webp"
+    },
+    {
       "Id": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Final_Project\\Bookle\\Bookle.MVC\\wwwroot\\imgs\\blogs\\3hsphtnu.f2c.jpg",
       "PackagePath": "staticwebassets\\imgs\\blogs\\3hsphtnu.f2c.jpg"
     },
     {
       "Id": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Final_Project\\Bookle\\Bookle.MVC\\wwwroot\\imgs\\blogs\\3knflhpj.ubo.jpg",
       "PackagePath": "staticwebassets\\imgs\\blogs\\3knflhpj.ubo.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Final_Project\\Bookle\\Bookle.MVC\\wwwroot\\imgs\\blogs\\451xycqv.u0u.jpeg",
+      "PackagePath": "staticwebassets\\imgs\\blogs\\451xycqv.u0u.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Final_Project\\Bookle\\Bookle.MVC\\wwwroot\\imgs\\blogs\\4iissaxv.ngb.jpg",
+      "PackagePath": "staticwebassets\\imgs\\blogs\\4iissaxv.ngb.jpg"
     },
     {
       "Id": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Final_Project\\Bookle\\Bookle.MVC\\wwwroot\\imgs\\blogs\\5gxd1wxf.wkv.webp",
@@ -23309,6 +23325,14 @@
       "PackagePath": "staticwebassets\\imgs\\blogs\\enb5us1m.1vl.jpg"
     },
     {
+      "Id": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Final_Project\\Bookle\\Bookle.MVC\\wwwroot\\imgs\\blogs\\g0zkhwam.scj.jpeg",
+      "PackagePath": "staticwebassets\\imgs\\blogs\\g0zkhwam.scj.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Final_Project\\Bookle\\Bookle.MVC\\wwwroot\\imgs\\blogs\\ga00arvz.g3o.jpg",
+      "PackagePath": "staticwebassets\\imgs\\blogs\\ga00arvz.g3o.jpg"
+    },
+    {
       "Id": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Final_Project\\Bookle\\Bookle.MVC\\wwwroot\\imgs\\blogs\\l0syqrhi.0ep.jpg",
       "PackagePath": "staticwebassets\\imgs\\blogs\\l0syqrhi.0ep.jpg"
     },
@@ -23319,6 +23343,10 @@
     {
       "Id": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Final_Project\\Bookle\\Bookle.MVC\\wwwroot\\imgs\\blogs\\n0lqlzno.khz.jpg",
       "PackagePath": "staticwebassets\\imgs\\blogs\\n0lqlzno.khz.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Final_Project\\Bookle\\Bookle.MVC\\wwwroot\\imgs\\blogs\\ncb1sdut.2gb.jpg",
+      "PackagePath": "staticwebassets\\imgs\\blogs\\ncb1sdut.2gb.jpg"
     },
     {
       "Id": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Final_Project\\Bookle\\Bookle.MVC\\wwwroot\\imgs\\blogs\\otnybreo.0m3.jpg",
@@ -23333,6 +23361,10 @@
       "PackagePath": "staticwebassets\\imgs\\blogs\\sb5jlqhw.l0g.jpg"
     },
     {
+      "Id": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Final_Project\\Bookle\\Bookle.MVC\\wwwroot\\imgs\\blogs\\sinfc4op.haj.jpg",
+      "PackagePath": "staticwebassets\\imgs\\blogs\\sinfc4op.haj.jpg"
+    },
+    {
       "Id": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Final_Project\\Bookle\\Bookle.MVC\\wwwroot\\imgs\\blogs\\w2kebjls.g0s.jpg",
       "PackagePath": "staticwebassets\\imgs\\blogs\\w2kebjls.g0s.jpg"
     },
@@ -23345,8 +23377,28 @@
       "PackagePath": "staticwebassets\\imgs\\blogs\\yxfbnoen.llg.jpg"
     },
     {
+      "Id": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Final_Project\\Bookle\\Bookle.MVC\\wwwroot\\imgs\\blogs\\zqjpomd3.gh2.webp",
+      "PackagePath": "staticwebassets\\imgs\\blogs\\zqjpomd3.gh2.webp"
+    },
+    {
+      "Id": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Final_Project\\Bookle\\Bookle.MVC\\wwwroot\\imgs\\bookks\\ggxcq1dk.liw.jpg",
+      "PackagePath": "staticwebassets\\imgs\\bookks\\ggxcq1dk.liw.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Final_Project\\Bookle\\Bookle.MVC\\wwwroot\\imgs\\bookks\\j4k55gmk.bw3.jpg",
+      "PackagePath": "staticwebassets\\imgs\\bookks\\j4k55gmk.bw3.jpg"
+    },
+    {
       "Id": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Final_Project\\Bookle\\Bookle.MVC\\wwwroot\\imgs\\books\\01khmvxm.upi.jpg",
       "PackagePath": "staticwebassets\\imgs\\books\\01khmvxm.upi.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Final_Project\\Bookle\\Bookle.MVC\\wwwroot\\imgs\\books\\03439fdf-100f-465b-9314-3a703ff68d98.jpg",
+      "PackagePath": "staticwebassets\\imgs\\books\\03439fdf-100f-465b-9314-3a703ff68d98.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Final_Project\\Bookle\\Bookle.MVC\\wwwroot\\imgs\\books\\06e28517-964e-4b7f-9209-04134c2ca34f.jpg",
+      "PackagePath": "staticwebassets\\imgs\\books\\06e28517-964e-4b7f-9209-04134c2ca34f.jpg"
     },
     {
       "Id": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Final_Project\\Bookle\\Bookle.MVC\\wwwroot\\imgs\\books\\0rlywmvc.jnr.jpg",
@@ -23355,6 +23407,10 @@
     {
       "Id": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Final_Project\\Bookle\\Bookle.MVC\\wwwroot\\imgs\\books\\1dwornuo.l5m.png",
       "PackagePath": "staticwebassets\\imgs\\books\\1dwornuo.l5m.png"
+    },
+    {
+      "Id": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Final_Project\\Bookle\\Bookle.MVC\\wwwroot\\imgs\\books\\1x5swvee.zy4.jpg",
+      "PackagePath": "staticwebassets\\imgs\\books\\1x5swvee.zy4.jpg"
     },
     {
       "Id": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Final_Project\\Bookle\\Bookle.MVC\\wwwroot\\imgs\\books\\25twe3ph.p1u.png",
@@ -23367,6 +23423,10 @@
     {
       "Id": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Final_Project\\Bookle\\Bookle.MVC\\wwwroot\\imgs\\books\\2uupysn5.har.jpg",
       "PackagePath": "staticwebassets\\imgs\\books\\2uupysn5.har.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Final_Project\\Bookle\\Bookle.MVC\\wwwroot\\imgs\\books\\367b5a95-8531-449a-a2a5-da9416dbff77.jpg",
+      "PackagePath": "staticwebassets\\imgs\\books\\367b5a95-8531-449a-a2a5-da9416dbff77.jpg"
     },
     {
       "Id": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Final_Project\\Bookle\\Bookle.MVC\\wwwroot\\imgs\\books\\3f3jxtpp.wlq.jpg",
@@ -23385,8 +23445,24 @@
       "PackagePath": "staticwebassets\\imgs\\books\\5wteqdaq.mxo.jpg"
     },
     {
+      "Id": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Final_Project\\Bookle\\Bookle.MVC\\wwwroot\\imgs\\books\\7bb23f17-b69b-48d7-9ca7-9e27c5a943bc.jpg",
+      "PackagePath": "staticwebassets\\imgs\\books\\7bb23f17-b69b-48d7-9ca7-9e27c5a943bc.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Final_Project\\Bookle\\Bookle.MVC\\wwwroot\\imgs\\books\\916e3840-d4ba-4cad-9072-5fbf65dd43f0.jpeg",
+      "PackagePath": "staticwebassets\\imgs\\books\\916e3840-d4ba-4cad-9072-5fbf65dd43f0.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Final_Project\\Bookle\\Bookle.MVC\\wwwroot\\imgs\\books\\b122d7e6-32e6-43fd-8a80-184577c290fd.jpg",
+      "PackagePath": "staticwebassets\\imgs\\books\\b122d7e6-32e6-43fd-8a80-184577c290fd.jpg"
+    },
+    {
       "Id": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Final_Project\\Bookle\\Bookle.MVC\\wwwroot\\imgs\\books\\bbkhldnc.euo.jpg",
       "PackagePath": "staticwebassets\\imgs\\books\\bbkhldnc.euo.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Final_Project\\Bookle\\Bookle.MVC\\wwwroot\\imgs\\books\\blg4.jpg",
+      "PackagePath": "staticwebassets\\imgs\\books\\blg4.jpg"
     },
     {
       "Id": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Final_Project\\Bookle\\Bookle.MVC\\wwwroot\\imgs\\books\\boeqxuq2.vdq.jpg",
@@ -23397,8 +23473,20 @@
       "PackagePath": "staticwebassets\\imgs\\books\\c5ezykex.hli.jpg"
     },
     {
+      "Id": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Final_Project\\Bookle\\Bookle.MVC\\wwwroot\\imgs\\books\\c95baa6c-bc19-4388-a3b0-4a9083f9c585.webp",
+      "PackagePath": "staticwebassets\\imgs\\books\\c95baa6c-bc19-4388-a3b0-4a9083f9c585.webp"
+    },
+    {
+      "Id": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Final_Project\\Bookle\\Bookle.MVC\\wwwroot\\imgs\\books\\cc165304-d5f1-406b-a2c2-967deedee060.jpeg",
+      "PackagePath": "staticwebassets\\imgs\\books\\cc165304-d5f1-406b-a2c2-967deedee060.jpeg"
+    },
+    {
       "Id": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Final_Project\\Bookle\\Bookle.MVC\\wwwroot\\imgs\\books\\civhvqvd.sni.webp",
       "PackagePath": "staticwebassets\\imgs\\books\\civhvqvd.sni.webp"
+    },
+    {
+      "Id": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Final_Project\\Bookle\\Bookle.MVC\\wwwroot\\imgs\\books\\ddtumf4p.vkz.webp",
+      "PackagePath": "staticwebassets\\imgs\\books\\ddtumf4p.vkz.webp"
     },
     {
       "Id": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Final_Project\\Bookle\\Bookle.MVC\\wwwroot\\imgs\\books\\e2o4bpec.2se.jpg",
@@ -23413,8 +23501,20 @@
       "PackagePath": "staticwebassets\\imgs\\books\\eckmdumv.xoh.jpg"
     },
     {
+      "Id": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Final_Project\\Bookle\\Bookle.MVC\\wwwroot\\imgs\\books\\f1tqapl3.zym.jpg",
+      "PackagePath": "staticwebassets\\imgs\\books\\f1tqapl3.zym.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Final_Project\\Bookle\\Bookle.MVC\\wwwroot\\imgs\\books\\fcfdb9a9-b3d1-411b-aaa4-5676e7f1f51f.jpg",
+      "PackagePath": "staticwebassets\\imgs\\books\\fcfdb9a9-b3d1-411b-aaa4-5676e7f1f51f.jpg"
+    },
+    {
       "Id": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Final_Project\\Bookle\\Bookle.MVC\\wwwroot\\imgs\\books\\ff22qigh.ihn.png",
       "PackagePath": "staticwebassets\\imgs\\books\\ff22qigh.ihn.png"
+    },
+    {
+      "Id": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Final_Project\\Bookle\\Bookle.MVC\\wwwroot\\imgs\\books\\fn53p5rb.y5m.jpg",
+      "PackagePath": "staticwebassets\\imgs\\books\\fn53p5rb.y5m.jpg"
     },
     {
       "Id": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Final_Project\\Bookle\\Bookle.MVC\\wwwroot\\imgs\\books\\fu0f5ccf.oki.jpg",
@@ -23441,6 +23541,10 @@
       "PackagePath": "staticwebassets\\imgs\\books\\hiefpzi0.313.jpg"
     },
     {
+      "Id": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Final_Project\\Bookle\\Bookle.MVC\\wwwroot\\imgs\\books\\hv4f5ezq.dqr.webp",
+      "PackagePath": "staticwebassets\\imgs\\books\\hv4f5ezq.dqr.webp"
+    },
+    {
       "Id": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Final_Project\\Bookle\\Bookle.MVC\\wwwroot\\imgs\\books\\i54sk30u.s0q.jpg",
       "PackagePath": "staticwebassets\\imgs\\books\\i54sk30u.s0q.jpg"
     },
@@ -23459,6 +23563,14 @@
     {
       "Id": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Final_Project\\Bookle\\Bookle.MVC\\wwwroot\\imgs\\books\\iwcbpdum.n21.jpg",
       "PackagePath": "staticwebassets\\imgs\\books\\iwcbpdum.n21.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Final_Project\\Bookle\\Bookle.MVC\\wwwroot\\imgs\\books\\j1fgusrr.pcu.jpg",
+      "PackagePath": "staticwebassets\\imgs\\books\\j1fgusrr.pcu.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Final_Project\\Bookle\\Bookle.MVC\\wwwroot\\imgs\\books\\jz3yeidk.uob.jpeg",
+      "PackagePath": "staticwebassets\\imgs\\books\\jz3yeidk.uob.jpeg"
     },
     {
       "Id": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Final_Project\\Bookle\\Bookle.MVC\\wwwroot\\imgs\\books\\l0v2w3yw.wti.jpg",
@@ -23493,6 +23605,18 @@
       "PackagePath": "staticwebassets\\imgs\\books\\og3wlsf0.udu.jpg"
     },
     {
+      "Id": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Final_Project\\Bookle\\Bookle.MVC\\wwwroot\\imgs\\books\\oqubrcam.h12.webp",
+      "PackagePath": "staticwebassets\\imgs\\books\\oqubrcam.h12.webp"
+    },
+    {
+      "Id": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Final_Project\\Bookle\\Bookle.MVC\\wwwroot\\imgs\\books\\p4gmn122.ni2.jpg",
+      "PackagePath": "staticwebassets\\imgs\\books\\p4gmn122.ni2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Final_Project\\Bookle\\Bookle.MVC\\wwwroot\\imgs\\books\\p4vd20o3.d5c.jpg",
+      "PackagePath": "staticwebassets\\imgs\\books\\p4vd20o3.d5c.jpg"
+    },
+    {
       "Id": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Final_Project\\Bookle\\Bookle.MVC\\wwwroot\\imgs\\books\\po01ldax.e3h.jpg",
       "PackagePath": "staticwebassets\\imgs\\books\\po01ldax.e3h.jpg"
     },
@@ -23503,6 +23627,10 @@
     {
       "Id": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Final_Project\\Bookle\\Bookle.MVC\\wwwroot\\imgs\\books\\ppv0i5zi.pbs.jpg",
       "PackagePath": "staticwebassets\\imgs\\books\\ppv0i5zi.pbs.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Final_Project\\Bookle\\Bookle.MVC\\wwwroot\\imgs\\books\\qcmyaq05.xuj.jpeg",
+      "PackagePath": "staticwebassets\\imgs\\books\\qcmyaq05.xuj.jpeg"
     },
     {
       "Id": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Final_Project\\Bookle\\Bookle.MVC\\wwwroot\\imgs\\books\\qe4zgaic.ri5.webp",
@@ -23521,6 +23649,10 @@
       "PackagePath": "staticwebassets\\imgs\\books\\qqzej30x.yzu.jpg"
     },
     {
+      "Id": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Final_Project\\Bookle\\Bookle.MVC\\wwwroot\\imgs\\books\\s3zfsour.3nu.jpeg",
+      "PackagePath": "staticwebassets\\imgs\\books\\s3zfsour.3nu.jpeg"
+    },
+    {
       "Id": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Final_Project\\Bookle\\Bookle.MVC\\wwwroot\\imgs\\books\\sj3znsd3.ssk.webp",
       "PackagePath": "staticwebassets\\imgs\\books\\sj3znsd3.ssk.webp"
     },
@@ -23537,6 +23669,10 @@
       "PackagePath": "staticwebassets\\imgs\\books\\uanidlap.ftt.jpg"
     },
     {
+      "Id": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Final_Project\\Bookle\\Bookle.MVC\\wwwroot\\imgs\\books\\uby2oirm.ruf.jpg",
+      "PackagePath": "staticwebassets\\imgs\\books\\uby2oirm.ruf.jpg"
+    },
+    {
       "Id": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Final_Project\\Bookle\\Bookle.MVC\\wwwroot\\imgs\\books\\umognxj0.3ci.jpg",
       "PackagePath": "staticwebassets\\imgs\\books\\umognxj0.3ci.jpg"
     },
@@ -23549,8 +23685,24 @@
       "PackagePath": "staticwebassets\\imgs\\books\\vrfvuzt1.303.jpg"
     },
     {
+      "Id": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Final_Project\\Bookle\\Bookle.MVC\\wwwroot\\imgs\\books\\vxqxvrtg.ld1.jpg",
+      "PackagePath": "staticwebassets\\imgs\\books\\vxqxvrtg.ld1.jpg"
+    },
+    {
       "Id": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Final_Project\\Bookle\\Bookle.MVC\\wwwroot\\imgs\\books\\wwwvjacw.yvn.jpeg",
       "PackagePath": "staticwebassets\\imgs\\books\\wwwvjacw.yvn.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Final_Project\\Bookle\\Bookle.MVC\\wwwroot\\imgs\\books\\wygxu24a.igl.jpg",
+      "PackagePath": "staticwebassets\\imgs\\books\\wygxu24a.igl.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Final_Project\\Bookle\\Bookle.MVC\\wwwroot\\imgs\\books\\xasnge5w.44e.jpeg",
+      "PackagePath": "staticwebassets\\imgs\\books\\xasnge5w.44e.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Final_Project\\Bookle\\Bookle.MVC\\wwwroot\\imgs\\books\\xbvmwhmj.jwp.webp",
+      "PackagePath": "staticwebassets\\imgs\\books\\xbvmwhmj.jwp.webp"
     },
     {
       "Id": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Final_Project\\Bookle\\Bookle.MVC\\wwwroot\\imgs\\books\\xl4kr0lo.5zd.png",
@@ -23563,6 +23715,14 @@
     {
       "Id": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Final_Project\\Bookle\\Bookle.MVC\\wwwroot\\imgs\\books\\ynky1hzi.mib.jpg",
       "PackagePath": "staticwebassets\\imgs\\books\\ynky1hzi.mib.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Final_Project\\Bookle\\Bookle.MVC\\wwwroot\\imgs\\books\\znrvyuuc.fa4.jpg",
+      "PackagePath": "staticwebassets\\imgs\\books\\znrvyuuc.fa4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Final_Project\\Bookle\\Bookle.MVC\\wwwroot\\imgs\\books\\ztxbybvi.k0y.jpg",
+      "PackagePath": "staticwebassets\\imgs\\books\\ztxbybvi.k0y.jpg"
     },
     {
       "Id": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Final_Project\\Bookle\\Bookle.MVC\\wwwroot\\projImages\\1.png",

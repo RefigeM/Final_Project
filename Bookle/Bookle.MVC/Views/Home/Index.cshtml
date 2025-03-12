@@ -75,7 +75,7 @@
                         <div class="swiper-slide">
                             <div class="shop-box-items style-2">
                                 <div class="book-thumb center">
-                                    <a href="shop-details"><img src="~/imgs/books/@book.CoverImageUrl" alt="img" width="150"></a>
+                                    <a href="shop-details"> <img src="@Url.Content(book.CoverImageUrl)" alt="img" width="150"></a>
                                     <ul class="shop-icon d-grid justify-content-center align-items-center">
                                         <li>
                                             @if (book.IsInWishlist)
@@ -199,7 +199,8 @@
             <div class="shop-box-items style-2">
                 <div class="book-thumb center">
                         <a href="shop-details">
-                            <img src="~/imgs/books/@topBook.CoverImageUrl" width="160" height="200px" />
+                            <img src="@Url.Content(topBook.CoverImageUrl)" width="160" height="200px" />
+
                         </a>
                     <ul class="shop-icon d-grid justify-content-center align-items-center">
                             <li>
@@ -320,7 +321,8 @@
                         <div class="top-ratting-box-items">
                             <div class="book-thumb">
                                 <a href="shop-details.html">
-                                    <img src="~/imgs/books/@topBook.CoverImageUrl" width="90" height="130px" />
+                                    <img src="@Url.Content(topBook.CoverImageUrl)" width="90" height="130px" />
+
                                 </a>
                             </div>
                             <div class="book-content">
@@ -541,7 +543,7 @@
                                         By Admin
                                     </li>
                                 </ul>
-                                <h3><a href="news-details.html">@blog.Title</a></h3>
+                                <h3><a asp-action="Details" asp-controller="Blog" asp-route-id="@blog.Id">@blog.Title</a></h3>
                                 <a asp-action="Details" asp-controller="Blog" asp-route-id="@blog.Id" class="main__title-link"> Read More <i class="fa-regular fa-arrow-right-long"></i></a>
 
                             </div>

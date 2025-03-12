@@ -1,6 +1,5 @@
 ﻿using Bookle.BL.Exceptions;
 using Bookle.BL.Services.Interfaces;
-using Bookle.BL.ViewModels.BookVMs;
 using Bookle.BL.ViewModels.CommentVMs;
 using Bookle.Core.Entities;
 using Bookle.Core.Repositories;

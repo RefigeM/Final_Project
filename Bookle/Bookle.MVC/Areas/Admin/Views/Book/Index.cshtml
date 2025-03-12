@@ -12,7 +12,7 @@
 			<div class="col-12">
 				<div class="main__title">
 					<h2 style="margin-right:40px">
-						<a asp-action="Index" asp-controller="Books">Books</a>
+						<a asp-action="Index" asp-controller="Book">Books</a>
 					</h2>
 					<div>
 						<form method="get" action="@Url.Action("BookSearch", "Book")" class="search-form">
@@ -52,7 +52,9 @@
 									<td>
 										<div class="catalog__text">@item.Id</div>
 									</td>
-									<td><img src="~/imgs/books/@item.CoverImageUrl" width="50" /></td>
+									<td>
+										<img src="@Url.Content(item.CoverImageUrl)" width="50" />
+									</td>
 
 									<td>
 										<div class="catalog__text"><a href="#">@item.Title</a></div>

@@ -3,12 +3,10 @@ using Bookle.Core.Enums;
 using Microsoft.AspNetCore.Http;
 using System.ComponentModel.DataAnnotations;
 
-namespace Bookle.BL.ViewModels.BookVMs;
-
 public class BookCreateVM
 {
 	[Required]
-	[MaxLength(32, ErrorMessage ="32den cox ola bilmez.")]
+	[MaxLength(32, ErrorMessage = "32dən cox ola bilmez.")]
 	public string Title { get; set; }
 
 	[Required]
@@ -16,15 +14,15 @@ public class BookCreateVM
 
 	[MaxLength(500)]
 	public string? ShortDescription { get; set; }
+
 	[MaxLength(700)]
 	public string? Description { get; set; }
 
-    [MaxLength(1000, ErrorMessage = "Role of Book can have a maximum of 1000 characters.")]
-    public string? RoleOfBook { get; set; }
+	[MaxLength(1000, ErrorMessage = "Role of Book can have a maximum of 1000 characters.")]
+	public string? RoleOfBook { get; set; }
 
-    [Required]
+	[Required]
 	public Genre Genre { get; set; }
-
 
 	[Required]
 	public Format Format { get; set; }
@@ -48,13 +46,13 @@ public class BookCreateVM
 	[MaxLength(50)]
 	public string Language { get; set; }
 
-	[Required(ErrorMessage ="File not selected")]
+	[Required(ErrorMessage = "File not selected")]
 	public IFormFile File { get; set; }
+
+	// This will store the relative URL of the uploaded file
 	public string? FileUrl { get; set; }
 
-	
-
-	public static implicit operator Book(BookCreateVM vm) 
+	public static implicit operator Book(BookCreateVM vm)
 	{
 		return new Book
 		{
@@ -70,7 +68,9 @@ public class BookCreateVM
 			Price = vm.Price,
 			Description = vm.Description,
 			ShortDescription = vm.ShortDescription,
-			RoleOfBook = vm.RoleOfBook
+			RoleOfBook = vm.RoleOfBook,
+			// Set the CoverImageUrl property if file is uploaded
+			CoverImageUrl = vm.FileUrl != null ? "/imgs/books/" + vm.File.FileName : null
 		};
 	}
 }

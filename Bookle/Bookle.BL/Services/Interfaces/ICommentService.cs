@@ -1,5 +1,4 @@
-﻿using Bookle.BL.ViewModels.BookVMs;
-using Bookle.BL.ViewModels.CommentVMs;
+﻿using Bookle.BL.ViewModels.CommentVMs;
 using Bookle.Core.Entities;
 
 namespace Bookle.BL.Services.Interfaces;

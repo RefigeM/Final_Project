@@ -1,5 +1,4 @@
 ﻿using Bookle.BL.Services.Interfaces;
-using Bookle.BL.ViewModels.BookVMs;
 using Bookle.BL.ViewModels.CommentVMs;
 using Bookle.Core.Entities;
 using Microsoft.AspNetCore.Authorization;

@@ -2,7 +2,6 @@
 using Bookle.BL.Extentions;
 using Bookle.BL.Services.Interfaces;
 using Bookle.BL.ViewModels.AuthorVMs;
-using Bookle.BL.ViewModels.BookVMs;
 using Bookle.BL.ViewModels.FilterVMs;
 using Bookle.BL.ViewModels.HomeVM;
 using Bookle.Core.Entities;
@@ -122,41 +121,45 @@ public class BookService(IBookRepository _repo, BookleDbContext _context, IAutho
 
     }
 
-    public async Task UpdateBookAsync(int id, BookUpdateVM vm)
-    {
-        var book = await _repo.GetByIdAsync(id);
-        if (book == null) throw new NotFoundException();
+	public async Task UpdateBookAsync(int id, BookUpdateVM vm)
+	{
+		var book = await _repo.GetByIdAsync(id);
+		if (book == null) throw new NotFoundException();
 
-        book.Title = vm.Title;
-        book.Price = vm.Price;
-        book.Description = vm.Description;
-        book.ShortDescription = vm.ShortDescription;
-        book.AuthorId = vm.AuthorId;
-        book.ISBN = vm.ISBN;
-        book.PublishingCountry = vm.Country;
-        book.Format = vm.Format;
-        book.Genre = vm.Genre;
-        book.PageCount = vm.PageCount;
-        book.Language = vm.Language;
-        book.PublishedYear = vm.PublishedYear;
-        book.RoleOfBook = vm.RoleOfBook;
-        book.ShortDescription = vm.ShortDescription;
+		book.Title = vm.Title;
+		book.Price = vm.Price;
+		book.Description = vm.Description;
+		book.ShortDescription = vm.ShortDescription;
+		book.AuthorId = vm.AuthorId;
+		book.ISBN = vm.ISBN;
+		book.PublishingCountry = vm.Country;
+		book.Format = vm.Format;
+		book.Genre = vm.Genre;
+		book.PageCount = vm.PageCount;
+		book.Language = vm.Language;
+		book.PublishedYear = vm.PublishedYear;
+		book.RoleOfBook = vm.RoleOfBook;
 
+        // Şəkil yalnız yeni şəkil yüklənirsə dəyişir
         if (vm.File != null)
         {
             string newFileName = await vm.File.UploadAsync("wwwroot/imgs/books");
             book.CoverImageUrl = "/imgs/books/" + newFileName;
         }
-
-
-
+        else
+        {
+            // Yeni şəkil yüklənməyibsə, əvvəlki şəkili qoruyuruq
+            book.CoverImageUrl = book.CoverImageUrl ?? "/imgs/books/default.jpg"; // Default şəkil istifadə edin
+        }
 
 
         await _repo.SaveAsync();
-    }
+	}
 
 
-    public async Task<IEnumerable<Book>> SearchBooksAsync(string searchQuery)
+
+
+	public async Task<IEnumerable<Book>> SearchBooksAsync(string searchQuery)
 	{
 		return string.IsNullOrEmpty(searchQuery)
 			? await _repo.GetAllBooksWithDetails().ToListAsync()

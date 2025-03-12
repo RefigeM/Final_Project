@@ -1,5 +1,4 @@
 ﻿using Bookle.BL.ViewModels.AuthorVMs;
-using Bookle.BL.ViewModels.BookVMs;
 using Bookle.BL.ViewModels.FilterVMs;
 using Bookle.BL.ViewModels.HomeVM;
 using Bookle.Core.Entities;

@@ -2,7 +2,6 @@
 using Bookle.BL.Helpers;
 using Bookle.BL.Services.Implements;
 using Bookle.BL.Services.Interfaces;
-using Bookle.BL.ViewModels.BookVMs;
 using Bookle.Core.Entities;
 using Bookle.Core.Enums;
 using Bookle.Core.Repositories;
@@ -82,15 +81,13 @@ namespace Bookle.MVC.Areas.Admin.Controllers
 		{
 			if (vm.File != null)
 			{
+				// Validate file type and size
 				if (!vm.File.IsValidType("image"))
 					ModelState.AddModelError("File", "File must be an image");
-				if (!vm.File.IsValidSize(400))
-					ModelState.AddModelError("File", "File must be less than 400");
+
+				if (!vm.File.IsValidSize(400)) // Size should be less than 400 KB
+					ModelState.AddModelError("File", "File must be less than 400 KB");
 			}
-			
-
-
-
 
 			if (!ModelState.IsValid)
 			{
@@ -100,21 +97,55 @@ namespace Bookle.MVC.Areas.Admin.Controllers
 				ViewBag.Genres = new SelectList(Enum.GetNames(typeof(Genre)));
 				ViewBag.Countries = new SelectList(new List<string> { "English", "Azerbaijani", "Turkish" });
 
-
 				return View(vm);
 			}
+
 			if (!await _context.Authors.AnyAsync(x => x.Id == vm.AuthorId))
 			{
-				ViewBag.Author = await _context.Authors.Where(x => !x.IsDeleted).ToListAsync();
+				ViewBag.Authors = await _context.Authors.Where(x => !x.IsDeleted).ToListAsync();
 				ModelState.AddModelError("AuthorId", "Author not found");
 				return View(vm);
 			}
-			Book book = vm;
-			book.CoverImageUrl = await vm.File!.UploadAsync(_env.WebRootPath, "imgs", "books");
 
-			
+			// Convert ViewModel to Entity
+			Book book = new Book
+			{
+				Title = vm.Title,
+				AuthorId = vm.AuthorId,
+				ShortDescription = vm.ShortDescription,
+				Description = vm.Description,
+				RoleOfBook = vm.RoleOfBook,
+				Genre = vm.Genre,
+				Format = vm.Format,
+				ISBN = vm.ISBN,
+				PublishingCountry = vm.Country,
+				PublishedYear = vm.PublishedYear,
+				PageCount = vm.PageCount,
+				Price = vm.Price,
+				Language = vm.Language,
+				CoverImageUrl = vm.FileUrl // We'll set this URL once we upload the file
+			};
 
+			// If File is not null, upload the file
+			if (vm.File != null)
+			{
+				// Define file path and upload
+				string fileName = Guid.NewGuid().ToString() + Path.GetExtension(vm.File.FileName);
+				string filePath = Path.Combine(_env.WebRootPath, "imgs", "books", fileName);
+
+				// Upload the file
+				using (var stream = new FileStream(filePath, FileMode.Create))
+				{
+					await vm.File.CopyToAsync(stream);
+				}
+
+				// Set the file URL for saving in the database
+				book.CoverImageUrl = "/imgs/books/" + fileName;
+			}
+
+			// Save the book to the database
 			await _service.AddBookAsync(book);
+
 			return RedirectToAction(nameof(Index));
 		}
 
@@ -139,26 +170,27 @@ namespace Bookle.MVC.Areas.Admin.Controllers
 			ViewBag.Countries = new SelectList(new List<string> { "USA", "Azerbaijan", "Turkey" });
 			ViewBag.Formats = new SelectList(Enum.GetNames(typeof(Format)));
 			ViewBag.Genres = new SelectList(Enum.GetNames(typeof(Genre)));
+            var bookVM = new BookUpdateVM
+            {
+                Title = book.Title,
+                AuthorId = book.AuthorId,
+                ShortDescription = book.ShortDescription,
+                Description = book.Description,
+                PublishedYear = book.PublishedYear,
+                ISBN = book.ISBN,
+                RoleOfBook = book.RoleOfBook,
+                Language = book.Language,
+                Country = book.PublishingCountry,
+                Genre = book.Genre,
+                Format = book.Format,
+                PageCount = book.PageCount,
+                Price = book.Price,
+                FileUrl = book.CoverImageUrl  // Burada CoverImageUrl ötürülür
+            };
 
-			var bookVM = new BookUpdateVM
-			{
-				Title = book.Title,
-				AuthorId = book.AuthorId,
-				ShortDescription = book.ShortDescription,
-				Description = book.Description,
-				PublishedYear = book.PublishedYear,
-				ISBN = book.ISBN,
-				RoleOfBook = book.RoleOfBook,
-				Language = book.Language,
-				Country = book.PublishingCountry,
-				Genre = book.Genre,
-				Format = book.Format,
-				PageCount = book.PageCount,
-				Price = book.Price,
-				FileUrl = book.CoverImageUrl
-			};
 
-			return View(bookVM);
+
+            return View(bookVM);
 		}
 
 		[HttpPost]
