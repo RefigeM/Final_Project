@@ -46,7 +46,7 @@
 								<td>
 									<div class="catalog__text">@Model.Id</div>
 								</td>
-								<td><img src="~/imgs/books/@Model.CoverImageUrl" width="50" /></td>
+								<td><img src="@Url.Content(Model.CoverImageUrl)" width="50" /></td>
 
 								<td>
 									<div class="catalog__text"><a href="#">@Model.Title</a></div>

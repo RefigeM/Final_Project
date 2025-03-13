@@ -29,7 +29,7 @@
 
 
                                 <span class="cart">
-                                    <img src="~/imgs/books/@book.CoverImageUrl" width="70" />
+                                    <img src="@Url.Content(book.CoverImageUrl)" width="70" />
                                 </span>
                                 <a asp-action="Details" asp-controller="Home" asp-route-id="@book.Id">@book.Title</a>
                         </td>

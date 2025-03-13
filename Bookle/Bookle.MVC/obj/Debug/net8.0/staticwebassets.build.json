@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ovb3K2rXWnbCtdbL0kh4CH8ISYjDIOmlNhiDnolL9qo=",
+  "Hash": "TvrW37V30Dz+Vhe4U0CxiSH903SN9rCQtp5K3S3XG9A=",
   "Source": "Bookle.MVC",
   "BasePath": "_content/Bookle.MVC",
   "Mode": "Default",
@@ -110217,6 +110217,25 @@
       "OriginalItemSpec": "wwwroot\\imgs\\authors\\tprlozxl.1p1.jpg"
     },
     {
+      "Identity": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Final_Project\\Bookle\\Bookle.MVC\\wwwroot\\imgs\\authors\\tz3mnxm5.4kl.jpg",
+      "SourceId": "Bookle.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Final_Project\\Bookle\\Bookle.MVC\\wwwroot\\",
+      "BasePath": "_content/Bookle.MVC",
+      "RelativePath": "imgs/authors/tz3mnxm5.4kl.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imgs\\authors\\tz3mnxm5.4kl.jpg"
+    },
+    {
       "Identity": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Final_Project\\Bookle\\Bookle.MVC\\wwwroot\\imgs\\authors\\u3ehqf5y.0aq.jpg",
       "SourceId": "Bookle.MVC",
       "SourceType": "Discovered",
@@ -111186,6 +111205,25 @@
       "OriginalItemSpec": "wwwroot\\imgs\\books\\0rlywmvc.jnr.jpg"
     },
     {
+      "Identity": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Final_Project\\Bookle\\Bookle.MVC\\wwwroot\\imgs\\books\\1992ffae-be64-4cd1-85bd-b67cb3e5f1e7.jpg",
+      "SourceId": "Bookle.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Final_Project\\Bookle\\Bookle.MVC\\wwwroot\\",
+      "BasePath": "_content/Bookle.MVC",
+      "RelativePath": "imgs/books/1992ffae-be64-4cd1-85bd-b67cb3e5f1e7.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imgs\\books\\1992ffae-be64-4cd1-85bd-b67cb3e5f1e7.jpg"
+    },
+    {
       "Identity": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Final_Project\\Bookle\\Bookle.MVC\\wwwroot\\imgs\\books\\1dwornuo.l5m.png",
       "SourceId": "Bookle.MVC",
       "SourceType": "Discovered",
@@ -111374,6 +111412,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\imgs\\books\\5wteqdaq.mxo.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Final_Project\\Bookle\\Bookle.MVC\\wwwroot\\imgs\\books\\6740e45e-85ff-46f6-8ad7-81457e81151e.jpeg",
+      "SourceId": "Bookle.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Final_Project\\Bookle\\Bookle.MVC\\wwwroot\\",
+      "BasePath": "_content/Bookle.MVC",
+      "RelativePath": "imgs/books/6740e45e-85ff-46f6-8ad7-81457e81151e.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imgs\\books\\6740e45e-85ff-46f6-8ad7-81457e81151e.jpeg"
     },
     {
       "Identity": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Final_Project\\Bookle\\Bookle.MVC\\wwwroot\\imgs\\books\\7bb23f17-b69b-48d7-9ca7-9e27c5a943bc.jpg",
@@ -112039,6 +112096,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\imgs\\books\\m5lnqsxc.gir.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Final_Project\\Bookle\\Bookle.MVC\\wwwroot\\imgs\\books\\miemjehc.qdl.jpeg",
+      "SourceId": "Bookle.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Final_Project\\Bookle\\Bookle.MVC\\wwwroot\\",
+      "BasePath": "_content/Bookle.MVC",
+      "RelativePath": "imgs/books/miemjehc.qdl.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imgs\\books\\miemjehc.qdl.jpeg"
     },
     {
       "Identity": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Final_Project\\Bookle\\Bookle.MVC\\wwwroot\\imgs\\books\\ncn1ixyv.gcc.jpg",

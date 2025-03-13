@@ -19,10 +19,10 @@ namespace Bookle.MVC.Areas.Admin.Controllers
 
 	public class BookController(BookleDbContext _context, IWebHostEnvironment _env, IBookService _service, IBookRepository _bookRepo) : Controller
 	{
-		public async Task<IActionResult> Index(int? page = 1, int? take = 4)
+		public async Task<IActionResult> Index(int? page = 1, int? take = 6)
 		{
 			if (!page.HasValue) page = 1;
-			if (!take.HasValue) take = 4;
+			if (!take.HasValue) take = 6;
 
 			var query = _bookRepo.GetAllBooksWithDetails();
 

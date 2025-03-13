@@ -17,8 +17,9 @@ public class BookCreateVM
 
 	[MaxLength(700)]
 	public string? Description { get; set; }
+    [Required(ErrorMessage = "Role of Book is required.")]
 
-	[MaxLength(1000, ErrorMessage = "Role of Book can have a maximum of 1000 characters.")]
+    [MaxLength(1000, ErrorMessage = "Role of Book can have a maximum of 1000 characters.")]
 	public string? RoleOfBook { get; set; }
 
 	[Required]
